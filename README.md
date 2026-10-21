@@ -1,6 +1,6 @@
 # Awesome-Productivity-Workspace
 
-# Top Productivity & Workspace Tools Ecosystem
+## Top Productivity & Workspace Tools Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Local-First Data Ownership, Block-Based Editing & Self-Hosted Collaboration*  
