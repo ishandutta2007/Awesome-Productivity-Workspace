@@ -1,101 +1,240 @@
-# Awesome-Productivity-Workspace
+<div align="center">
 
-## Top Productivity & Workspace Tools Ecosystem
+  <img src="assets/banner.svg" alt="Awesome Productivity &amp; Workspace Banner" width="100%" />
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Local-First Data Ownership, Block-Based Editing & Self-Hosted Collaboration*  
-**Last updated: March 2026**
+  # 🚀 Awesome Productivity &amp; Workspace
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Productivity & Workspace**. These tools combine notes, wikis, databases, and project views into one workspace — the digital equivalent of a filing cabinet, whiteboard, and task list fused together. The core trade-off is always the same: how much do you value polish and collaboration versus owning your data outright?
+  <p align="center">
+    <strong>A curated directory of top-tier Local-First, Block-Based, Markdown &amp; Self-Hosted Collaborative Workspace Tools.</strong>
+  </p>
 
-**Examples** include Notion, Coda, Obsidian, AppFlowy, AFFiNE, Joplin, Logseq, Standard Notes, Microsoft OneNote, and Evernote (the category leaders).
+  <p align="center">
+    <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+    <a href="https://github.com/ishandutta2007/Awesome-Productivity-Workspace/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Productivity-Workspace?style=flat-square&logo=github&color=38bdf8" alt="GitHub_Stars" /></a>
+    <a href="https://github.com/ishandutta2007/Awesome-Productivity-Workspace/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Productivity-Workspace?style=flat-square&logo=github&color=818cf8" alt="GitHub Forks" /></a>
+    <a href="https://github.com/ishandutta2007/Awesome-Productivity-Workspace/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Productivity-Workspace?style=flat-square&color=c084fc" alt="License" /></a>
+    <a href="https://github.com/ishandutta2007/Awesome-Productivity-Workspace/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+    <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  </p>
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, local-first storage, and transparent data portability — ideal for teams prioritizing privacy, avoiding subscription fatigue, and building knowledge bases they can export without vendor permission.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Notion](https://www.notion.com/)**  
-  **The reference all-in-one workspace** where pages and databases are the same primitive. Relations, rollups, and every view (table, board, gallery, timeline, calendar) are polished. **Free for individuals**; Plus at **$10/member/month**, Business at **$20/member/month** (annual billing) [citation:13]. **Cloud-only by default** — offline mode is opt-in per page with caveats: sub-pages don't auto-download, embeds/buttons/AI don't work offline, and databases cap at 50 rows offline [citation:5]. **Databases slow down as they grow** — Notion's own help center caps them at 250,000 rows before writes stop saving entirely [citation:5]. **Data export ties you to Notion's schema** [citation:1]. **Best for teams wanting the most polished database-plus-notes experience** and willing to accept cloud dependency.
-
-- **[Coda](https://coda.io/)**  
-  **Docs that work like apps** with tables, buttons, formulas, and automations. Stronger automation and integration ecosystem than Notion — connects natively with Slack, Zapier, Stripe, Google Calendar, and more [citation:3][citation:9]. **Free tier for basic docs**; **$10 per doc maker per month** for advanced automation and unlimited storage [citation:3]. **Best for teams building doc-based apps** with formulas and cross-platform workflow automation.
-
-- **[Microsoft OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote)**  
-  **The long-standing free-form note-taking app** within Microsoft 365. Infinite canvas, ink support, and deep Office integration. Free with a Microsoft account. **Best for individuals already in the Microsoft ecosystem** wanting frictionless capture without a new subscription.
-
-- **[Evernote](https://evernote.com/)**  
-  **The original note-taking service**, now with increasingly restrictive free plans (50 notes, 1 notebook, 1 device) [citation:4]. Paid tiers add device syncing, storage, and advanced features. **Best for existing users with large archives** — new users should evaluate open alternatives first.
-
-- **[Slite](https://slite.com/)**  
-  **Lean team knowledge base** with AI answers, collections, and collaborative editing. Positioned as a tighter wiki than Notion's database-heavy approach [citation:13].
-
-- **[Craft](https://www.craft.do/)**  
-  Native Apple-focused documents and notes with a polished block editor and strong visual design.
-
-## Open-Source GitHub Projects
-
-- **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)**  
-  **The most complete open-source Notion alternative** — AGPL-3.0 licensed, Rust and Flutter based [citation:1][citation:11]. **Runs fully offline by default** and **self-hosts via AppFlowy Cloud** (Docker Compose: API, GoTrue auth, PostgreSQL, Redis, MinIO) [citation:5][citation:11]. **Databases support grid, board, calendar, and document views, filters, sorts, and relations** comparable to Notion — though **formulas are more limited** and **import from other apps has rough edges** [citation:1]. **Self-hosting delivers instant page loads** — "when your data lives on the same machine your editor is running on, there's just nothing to wait for" [citation:5]. **Trade-offs**: **heavier multi-service stack** (~2-4 GB RAM for the full Cloud deployment) [citation:11]; **real-time collaboration was sometimes janky in 2025** and sync conflicts annoyed some teams [citation:7]; **no drag-and-drop for pages** in the app (use the menu) [citation:6]. **Best for teams migrating off Notion who need structured databases with full data ownership** [citation:5][citation:11].
-
-- **[AFFiNE](https://github.com/toeverything/AFFiNE)**  
-  **The docs-plus-whiteboard hybrid** — MIT licensed Community Edition, self-hostable via Docker [citation:8][citation:14]. **Two editors in one tool**: a block document editor for text and databases, and an **edgeless canvas** for sticky notes, shapes, mind maps, and embedded content [citation:14]. **AI features** for summarizing, creating slides, and mind mapping (configure your own API key or local LLM for self-hosted) [citation:14]. **Local-first with real-time sync** across web and desktop clients [citation:8]. **Trade-offs**: **no third-party integrations** currently — manual data import and separate workflow management [citation:3]; **lacks Gantt charts, time tracking, and automation** compared to mature project tools [citation:3]; **enterprise permissions and audit logs are thinner than Notion's** [citation:12]. **Best for teams wanting document editing and visual brainstorming in one tool** — especially those who'd otherwise pay for Notion *and* Miro [citation:3][citation:14].
-
-- **[Obsidian](https://obsidian.md/)**  
-  **The local-first markdown standard** — notes stored as **plain markdown files on your disk** [citation:1]. **Free without limits** for personal use; **Sync at $4/user/month** (annual) for encrypted cross-device sync, Publish at $8/site/month [citation:13]. **Bases feature** ships in the default install, providing Notion-style filtered views over notes with frontmatter — a lightweight answer to databases without a separate app [citation:1]. **2,000+ community plugins** extend functionality (Dataview for queries, etc.) [citation:12]. **Trade-offs**: **real-time team collaboration is not its core strength** — shared vaults come through paid Sync [citation:13]; **no native database relations/rollups** comparable to Notion [citation:1]. **Best for individuals and small teams prioritizing privacy, offline access, and owning plain files forever** [citation:1][citation:13].
-
-- **[Joplin](https://github.com/laurent22/joplin)**  
-  **The open-source Evernote replacement** — MIT licensed, PCMag's "Best Open-Source App" pick [citation:10]. **Free with no core feature restrictions**, notes stored locally, and **sync via Dropbox, NextCloud, OneDrive, or paid Joplin Cloud** — you are not forced into a paid tier [citation:10]. **Apps for all major platforms**, excellent importers from Evernote and other apps, and a strong web clipper [citation:10]. **Trade-offs**: **mobile scanning, OCR, and sketching require plug-ins** [citation:10]. **Best for users migrating from Evernote** who want a familiar note-taking experience with local storage and flexible sync.
-
-- **[Logseq](https://github.com/logseq/logseq)**  
-  **The outliner and daily-notes knowledge base** — AGPL-3.0 licensed, local markdown files. **Outline-first design** with daily journals and bidirectional linking — grows knowledge from daily notes rather than top-down structure [citation:12]. **Best for personal knowledge management** in a networked-thought style. **Weak for team collaboration** [citation:12].
-
-- **[Anytype](https://github.com/anytypeio/anytype-ts)**  
-  **The encrypted, local-first workspace** — AGPL-3.0 licensed. **Offline-first with on-device encryption and peer-to-peer sync** [citation:13]. **Object-based data model** with database views. **Free tier** with paid Plus plan [citation:12]. **Best for privacy-maximalists** who want encrypted notes that sync without a central server.
-
-- **[Alexandrie](https://github.com/Smaug6739/Alexandrie)**  
-  **The self-hosted Markdown knowledge base with advanced technical writing** — **one-command Docker deployment** [citation:2]. **Extended CodeMirror 6 editor** with **LaTeX, custom containers, interactive checkboxes, and native diagram rendering** [citation:2]. **Offline-first PWA** with full offline capabilities and sync [citation:2]. **Multi-tenant architecture** (Teams → Workspaces → Categories → Documents) with a **5-level access model** (None/Read/Write/Admin/Owner) [citation:2]. **OIDC SSO** and **S3-compatible storage** (RustFS, Garage, MinIO, AWS) [citation:2]. **Full-text indexing** with snippet highlights, **Ctrl+K command center**, and **Kanban boards** alongside documentation [citation:2]. **Best for technical teams wanting a self-hosted Confluence/Notion alternative** with LaTeX and diagrams in Markdown, and enterprise auth requirements.
-
-- **[Standard Notes](https://github.com/standardnotes/app)**  
-  **The privacy-first simple note-taking app** — **end-to-end encryption** on the free plan, **unlimited device syncing**, tags, offline access, and PIN-protected notes [citation:4]. **Paid plan adds Markdown, checklists, spreadsheets, and web clipper** — but **encryption and device count are never limited by payment tier** [citation:4]. **Best for users wanting the simplest possible encrypted notes** without feature bloat.
-
-- **[Notesnook](https://github.com/streetwriters/notesnook)**  
-  **The feature-rich privacy-focused Evernote alternative** — **free plan: 50 MB/month storage, 10 MB file uploads, 50 notebooks, 50 tags, unlimited devices and notes** [citation:4]. **Rich-text editing** with checklists, headings, code snippets, math formulas, and embeds [citation:4]. **Best for Evernote refugees** wanting more generous free limits and modern formatting than Evernote's free tier.
-
-### Additional Strong Open-Source Options
-
-- **Nuclino** — Simple, fast team wiki from Germany. Freemium with European data residency [citation:15].
-- **Outline** — Open-source team wiki with a polished editor. Often paired with self-hosted infrastructure.
-- **Docmost** — Collaborative wiki and documentation platform. AGPL-3.0 core, PostgreSQL and Redis.
-- **SiYuan** — Local-first personal knowledge management with block-based editing and Markdown.
-- **Dendron** — Hierarchical note-taking in VS Code with git-backed storage. Developer-centric [citation:9].
-- **La Suite Docs** — French government-backed collaborative document suite.
-
-**Frameworks for building custom systems**: Combine **AppFlowy** for a self-hosted Notion-style workspace with databases and full data ownership, **AFFiNE** for docs plus whiteboard in one self-hostable tool, **Obsidian** for local-first Markdown files that outlive any vendor, **Joplin** for Evernote-style capture with flexible sync, **Alexandrie** for self-hosted technical documentation with LaTeX and OIDC SSO, and **Standard Notes** for minimal encrypted notes — to build a productivity workspace tailored to your team's collaboration needs, privacy requirements, and tolerance for running infrastructure.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Productivity workspaces differ significantly in data ownership, collaboration model, and operational overhead. **Notion's databases slow down as they grow** and cap at 250,000 rows; **offline mode is per-page with sub-pages not auto-downloading** [citation:5]. **AppFlowy is the closest open-source Notion replacement** but its self-hosted stack is multi-service (API, auth, Postgres, Redis, S3) requiring ~2-4 GB RAM [citation:11]. **AFFiNE has no third-party integrations** and lacks Gantt/time-tracking compared to mature project tools [citation:3]. **Obsidian is local-first and free** but real-time collaboration is weak [citation:13]. **Standard Notes never limits encryption or device count by payment tier** [citation:4]. **Self-hosting shifts operational responsibility to you** — backups, upgrades, and security patches become your job.
-- Self-hosted open-source solutions require proper database backups, TLS configuration, and monitoring of sync conflicts and service health.
+</div>
 
 ---
 
-**Made for knowledge workers, teams, and organizations building productivity workspaces they can own and control.**
-Let's make productivity and workspaces more open, local-first, and data-sovereign.
+## 📖 Overview & Architecture Landscape
+
+Modern **productivity workspaces** fuse note-taking, hierarchical wikis, relational databases, kanban boards, and project management into a single unified canvas. Rather than juggling disconnected spreadsheets, documents, and task lists, teams and individuals utilize block-based editors and dynamic views to structure institutional knowledge.
+
+The central trade-off across this software category centers on **data ownership versus collaborative polish**:
+- **Commercial SaaS platforms** (Notion, Coda, ClickUp, monday.com) provide effortless real-time multi-user syncing, rich automation ecosystems, and slick user interfaces, but require perpetual subscriptions and store proprietary data schemas in vendor-locked cloud servers.
+- **Open-source & Local-First solutions** (AppFlowy, AFFiNE, Memos, Joplin, SiYuan, Logseq, Docmost) prioritize local disk storage, zero-knowledge end-to-end encryption (E2EE), Docker-based self-hosting, and raw Markdown portability—giving knowledge workers absolute sovereignty over their data.
+
+---
+
+## 📑 Table of Contents
+
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects (Ranked by Stars)](#-open-source-github-projects-ranked-by-stars)
+- [💎 Local-First Proprietary Benchmark](#-local-first-proprietary-benchmark)
+- [📊 Architectural Comparison Matrix](#-architectural-comparison-matrix)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer](#️-disclaimer)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global **Productivity and Collaborative Workspace Software market** was valued at approximately **$54.8 Billion in 2024** and is projected to expand to **$102.5 Billion by 2030**, exhibiting a Compound Annual Growth Rate (**CAGR of ~11.0%**). This accelerating demand is driven by distributed hybrid workforces, asynchronous documentation cultures, and the rapid embedding of LLM-based autonomous AI retrieval agents into enterprise wikis.
+
+The industry landscape demonstrates a **two-tier market concentration dynamic**:
+1. **Office Suite Infrastructure Layer (Highly Concentrated / Winner-Take-Most)**: Foundational email, office editing, and cloud document storage are overwhelmingly dominated by public cloud hyperscalers—primarily Microsoft (Microsoft 365) and Google (Google Workspace)—due to massive enterprise distribution moats and unified identity (SSO) systems.
+2. **Modular Collaborative Workspaces & Knowledge Engines (Moderately Fragmented)**: The specialized sector covering block-based relational docs, team knowledge bases, and personal knowledge management (PKM) remains highly dynamic and competitive. Category frontrunners (Notion, monday.com, ClickUp, Coda) actively compete against an aggressive wave of **local-first and open-source alternatives** (AppFlowy, AFFiNE, Memos, SiYuan, Docmost) fueled by developer resistance to cloud lock-in, data sovereignty regulations (GDPR/HIPAA), and zero-trust security postures.
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+The table below catalogs premier commercial SaaS productivity workspaces, sorted in **descending order of parent company size (valuation / market capitalization)**:
+
+| Platform | Company Valuation / Revenue | Starting Tier Price | Free Tier Limit | Core Architecture & Sweet Spot |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote)** | **$3.12 Trillion** Market Cap (~$245B ARR) | **$6.99/mo** (Personal) or **$6.00/user/mo** billed annually (Business Basic) | **Free forever**: 5 GB OneDrive cloud storage limit per Microsoft account with cross-device sync. | Free-form infinite canvas with digital ink, audio capture, and seamless native integration across the Microsoft 365 enterprise ecosystem. |
+| **[monday.com](https://monday.com/)** | **$14.2 Billion** Market Cap (~$950M ARR) | **$9.00/seat/mo** billed annually ($12.00 billed monthly; 3-seat minimum = $27/mo) for Basic plan | **Free forever**: Up to 2 team seats, 3 active boards, 200+ templates, and 500 MB cloud file storage. | Visual Work OS emphasizing relational column types, sprint planning, project dashboards, and automated status pipelines. |
+| **[Notion](https://www.notion.com/)** | **$10.0 Billion** Valuation (~$250M ARR) | **$10.00/member/mo** billed annually ($12.00 billed monthly) for Plus plan | **Free forever**: Unlimited blocks for individuals, up to 10 guest collaborators, 5 MB file upload limit per file, 7-day page history. | The industry benchmark for all-in-one relational databases, rollups, kanban boards, wikis, and AI document synthesis. |
+| **[ClickUp](https://clickup.com/)** | **$4.0 Billion** Valuation (~$175M ARR) | **$7.00/user/mo** billed annually ($10.00 billed monthly) for Unlimited plan | **Free forever**: 100 MB cloud storage limit, unlimited tasks, unlimited team members, 100 custom field uses, 100 automations/mo. | All-in-one project management and workspace suite featuring 15+ views, native time tracking, sprint points, and nested docs. |
+| **[Evernote](https://evernote.com/)** | **$2.55 Billion** Valuation (Parent: Bending Spoons; ~$100M ARR) | **$14.99/mo** ($129.99/year) for Evernote Personal | **Free forever**: Capped strictly at 50 total notes, 1 notebook, 1 single active synced device, and 25 MB max note size (60 MB/mo upload). | Pioneer note capture system featuring high-fidelity web clipper, optical character recognition (OCR) for handwritten notes, and PDF search. |
+| **[Coda](https://coda.io/)** | **$1.4 Billion** Valuation (~$50M ARR) | **$10.00/Doc Maker/mo** billed annually ($12.00 billed monthly) for Pro plan (Viewers & Editors are free) | **Free forever**: Up to 50 doc objects (tables, views, buttons, formulas) per document, unmetered viewing & editing, 1 GB storage limit, 35 automations/mo. | Document-software hybrid enabling teams to build interactive internal apps with programmable buttons, rich formulas, and two-way integration Packs (Slack, Jira, Stripe). |
+| **[Craft](https://www.craft.do/)** | **~$60 Million** Valuation ($16.8M funding raised) | **$8.00/member/mo** billed annually ($10.00 billed monthly) for Plus plan | **Free forever**: Up to 1,000 document blocks, 1 GB storage, 2 team members, and 30-day version history. | Native Apple-first aesthetic with lightning-fast nested card structures, high-performance offline caching, and publication-ready export typography. |
+| **[Slite](https://slite.com/)** | **~$25 Million** Valuation ($15.3M funding raised) | **$8.00/user/mo** billed annually ($10.00 billed monthly) for Standard plan | **Free forever**: Up to 50 total documents, standard block editor, 1 active user; or 14-day free trial for full team workspaces. | Distraction-free team knowledge base designed around clean documentation, asynchronous discussions, and AI-powered question answering. |
+
+---
+
+## 🔓 Open-Source GitHub Projects (Ranked by Stars)
+
+A curated compilation of top self-hostable, local-first, and open-source productivity workspaces, **sorted in descending order by GitHub stargazers**:
+
+### 1. [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) [![GitHub stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: Rust, Flutter, Go, PostgreSQL, Redis, MinIO
+- **Key Capabilities**: The leading open-source Notion alternative. Features complete offline capability by default, grid, board, calendar, and document views, customizable filters, and self-hosted AppFlowy Cloud via Docker Compose. Ensures instant page loads because data resides on your local hardware.
+
+### 2. [AFFiNE](https://github.com/toeverything/AFFiNE) [![GitHub stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers)
+- **License**: Community Edition (Source Available / Open Core)
+- **Technology Stack**: TypeScript, Rust (OctoBase), WebAssembly, React
+- **Key Capabilities**: The next-generation docs-plus-whiteboard hybrid. Unifies structured block document editing with an edgeless whiteboard canvas for mind maps, sticky notes, and sketches. Local-first CRDT synchronization across desktop and web with self-hostable Docker deployment.
+
+### 3. [Memos](https://github.com/usememos/memos) [![GitHub stars](https://img.shields.io/github/stars/usememos/memos?style=social&color=white)](https://github.com/usememos/memos/stargazers)
+- **License**: MIT
+- **Technology Stack**: Go, TypeScript, React, SQLite / PostgreSQL
+- **Key Capabilities**: Ultra-lightweight, privacy-first, self-hosted note-taking service and micro-journal. Features a personal timeline, rich Markdown formatting, tag-based categorization, REST APIs, and instant single-binary or single-container Docker deployment.
+
+### 4. [Joplin](https://github.com/laurent22/joplin) [![GitHub stars](https://img.shields.io/github/stars/laurent22/joplin?style=social&color=white)](https://github.com/laurent22/joplin/stargazers)
+- **License**: MIT
+- **Technology Stack**: TypeScript, Electron, React Native, SQLite
+- **Key Capabilities**: The definitive open-source Evernote replacement. Supports end-to-end encrypted (E2EE) synchronization via Nextcloud, Dropbox, WebDAV, OneDrive, or self-hosted Joplin Server. Offers native desktop and mobile apps, full-text search, plugins, and web clipper.
+
+### 5. [SiYuan](https://github.com/siyuan-note/siyuan) [![GitHub stars](https://img.shields.io/github/stars/siyuan-note/siyuan?style=social&color=white)](https://github.com/siyuan-note/siyuan/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: Go, TypeScript, Electron, SQLite
+- **Key Capabilities**: Privacy-first, local-first personal knowledge workspace built on a granular block-level reference architecture. Includes bidirectional linking, SQL-based database queries, graph visualization, PDF annotation, and built-in end-to-end cloud sync with self-hosting support.
+
+### 6. [Logseq](https://github.com/logseq/logseq) [![GitHub stars](https://img.shields.io/github/stars/logseq/logseq?style=social&color=white)](https://github.com/logseq/logseq/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: Clojure, ClojureScript, Electron, Datascript
+- **Key Capabilities**: Outliner-first knowledge management system built on local plain-text Markdown and Org-mode files. Emphasizes daily journals, bi-directional backlinks, flashcards (spaced repetition), and queries without vendor lock-in.
+
+### 7. [Outline](https://github.com/outline/outline) [![GitHub stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers)
+- **License**: BSL 1.1 / Open Core
+- **Technology Stack**: Node.js, TypeScript, React, PostgreSQL, Redis, S3
+- **Key Capabilities**: Fast, modern, and beautiful collaborative knowledge base and wiki for growing teams. Features a clean markdown-compatible editor, enterprise SSO (Google, Okta, OIDC, Slack), granular permission hierarchies, and complete audit logging.
+
+### 8. [Trilium Notes](https://github.com/TriliumNext/Trilium) [![GitHub stars](https://img.shields.io/github/stars/TriliumNext/Trilium?style=social&color=white)](https://github.com/TriliumNext/Trilium/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: JavaScript, Node.js, SQLite, Electron
+- **Key Capabilities**: Hierarchical note-taking application designed for building large-scale personal knowledge bases. Features deep note trees, note cloning, scripting via JavaScript APIs, mind maps, relationship diagrams, and automated desktop-to-server sync.
+
+### 9. [Docmost](https://github.com/docmost/docmost) [![GitHub stars](https://img.shields.io/github/stars/docmost/docmost?style=social&color=white)](https://github.com/docmost/docmost/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: NestJS, TypeScript, React, PostgreSQL, Redis
+- **Key Capabilities**: Open-source collaborative wiki and documentation software engineered as a modern alternative to Confluence and Notion. Provides real-time multiplayer editing, nested page trees, markdown shortcuts, file attachments, and lightweight Docker hosting.
+
+### 10. [Foam](https://github.com/foambubble/foam) [![GitHub stars](https://img.shields.io/github/stars/foambubble/foam?style=social&color=white)](https://github.com/foambubble/foam/stargazers)
+- **License**: MIT
+- **Technology Stack**: TypeScript, VS Code Extension ecosystem, Markdown
+- **Key Capabilities**: A personal knowledge management and sharing system inspired by Roam Research, built directly into Visual Studio Code. Uses raw Markdown files on disk, Git for version control and backup, and graph visualization for interconnected thoughts.
+
+### 11. [Notesnook](https://github.com/streetwriters/notesnook) [![GitHub stars](https://img.shields.io/github/stars/streetwriters/notesnook?style=social&color=white)](https://github.com/streetwriters/notesnook/stargazers)
+- **License**: GPL-3.0
+- **Technology Stack**: TypeScript, React, React Native, SQLite
+- **Key Capabilities**: Fully open-source and zero-knowledge end-to-end encrypted note-taking application. Protects notes with client-side encryption, biometric locks, export to PDF/Markdown, and full multi-device synchronization without tracking or telemetry.
+
+### 12. [Anytype](https://github.com/anyproto/anytype-ts) [![GitHub stars](https://img.shields.io/github/stars/anyproto/anytype-ts?style=social&color=white)](https://github.com/anyproto/anytype-ts/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: Go (anytype-heart), TypeScript, Electron
+- **Key Capabilities**: Local-first, peer-to-peer encrypted operating environment for thoughts and docs. Uses an object-oriented graph data model (pages, tasks, sets, relations) operating seamlessly offline and syncing via local network or encrypted backup nodes.
+
+### 13. [HedgeDoc](https://github.com/hedgedoc/hedgedoc) [![GitHub stars](https://img.shields.io/github/stars/hedgedoc/hedgedoc?style=social&color=white)](https://github.com/hedgedoc/hedgedoc/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: Node.js, TypeScript, React, PostgreSQL / MariaDB
+- **Key Capabilities**: Self-hosted, real-time collaborative Markdown editor (formerly CodiMD). Enables concurrent team editing of technical specifications, meeting minutes, and presentations with slide mode, MathJax/LaTeX, and diagram support.
+
+### 14. [Dendron](https://github.com/dendronhq/dendron) [![GitHub stars](https://img.shields.io/github/stars/dendronhq/dendron?style=social&color=white)](https://github.com/dendronhq/dendron/stargazers)
+- **License**: Apache-2.0
+- **Technology Stack**: TypeScript, VS Code Extension
+- **Key Capabilities**: Hierarchical note-taking tool that grows alongside your knowledge base. Combines the freedom of linking with the structure of schemas, enabling fast refactoring, flexible publishing, and full Git synchronization.
+
+### 15. [Standard Notes](https://github.com/standardnotes/app) [![GitHub stars](https://img.shields.io/github/stars/standardnotes/app?style=social&color=white)](https://github.com/standardnotes/app/stargazers)
+- **License**: AGPL-3.0
+- **Technology Stack**: TypeScript, React, Ruby on Rails (Sync Server), SQLite
+- **Key Capabilities**: Ultra-secure, privacy-focused note-taking application. Free tier offers lifetime end-to-end encryption with unlimited cross-device sync, offline access, and PIN protection, while paid tiers add rich text, code editors, and spreadsheets.
+
+### 16. [SilverBullet](https://github.com/silverbulletmd/silverbullet) [![GitHub stars](https://img.shields.io/github/stars/silverbulletmd/silverbullet?style=social&color=white)](https://github.com/silverbulletmd/silverbullet/stargazers)
+- **License**: MIT
+- **Technology Stack**: TypeScript, Deno, WebAssembly, Lua
+- **Key Capabilities**: An extensible, open-source personal knowledge base powered by plain Markdown files. Features an in-browser editor with live queries, embedded templates, client-side offline execution, and scripting via Lua.
+
+### 17. [Alexandrie](https://github.com/Smaug6739/Alexandrie) [![GitHub stars](https://img.shields.io/github/stars/Smaug6739/Alexandrie?style=social&color=white)](https://github.com/Smaug6739/Alexandrie/stargazers)
+- **License**: MIT
+- **Technology Stack**: TypeScript, Next.js, CodeMirror 6, Docker, MinIO / S3
+- **Key Capabilities**: Lightweight, offline-first Markdown knowledge base with deep technical writing capabilities. Supports interactive LaTeX, diagrams, multi-tenant teams, OIDC single sign-on, full-text indexing, and automated S3 backups.
+
+---
+
+## 💎 Local-First Proprietary Benchmark
+
+While not licensed under an open-source license, **[Obsidian](https://obsidian.md/)** represents the gold-standard proprietary benchmark for the local-first movement:
+- **Architecture**: Proprietary Electron/Node.js desktop and mobile app built entirely on **plain Markdown text files stored directly on your local hard drive**.
+- **Pricing**: Completely **free for personal use** with no functional limits; optional end-to-end encrypted **Obsidian Sync at $4/user/mo** (billed annually) and **Obsidian Publish at $8/site/mo**.
+- **Ecosystem**: Over 2,000 community plugins (Dataview, Canvas, Excalidraw, Calendar) allowing users to construct custom database query layers and visual workspaces while retaining 100% data ownership.
+
+---
+
+## 📊 Architectural Comparison Matrix
+
+| Project | Primary License | Primary Data Paradigm | Offline & Sync Model | Self-Hosting Stack | Best Architectural Fit |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **AppFlowy** | AGPL-3.0 | Relational Block Databases | Local SQLite + WebSocket Sync | Docker: Postgres, Redis, MinIO | Teams seeking a drop-in self-hosted Notion alternative with relational views |
+| **AFFiNE** | Open Core | Docs + Infinite Canvas Hybrid | Local-First (OctoBase CRDTs) | Docker Compose + Node backend | Users requiring both document writing and visual whiteboard brainstorming |
+| **Memos** | MIT | Social Timeline & Micro-notes | Server-backed REST API / PWA | Single Docker container + SQLite | Developers wanting lightweight, frictionless thought capture and daily logs |
+| **Joplin** | MIT | Hierarchical Notebooks & Tags | Local SQLite + Multi-Cloud Sync | Joplin Server or Nextcloud/WebDAV | Users migrating away from Evernote needing reliable E2EE cross-device sync |
+| **SiYuan** | AGPL-3.0 | Granular Block Graph Model | Local SQLite + WebDAV/S3 E2EE | Single Docker image / Go binary | Power users wanting bidirectional linking, SQL queries, and deep knowledge networks |
+| **Logseq** | AGPL-3.0 | Journal Outliner & Network Graph | Local Markdown / Org Files | Desktop App / Git Versioning | Individual knowledge workers practicing networked thought and daily journaling |
+| **Outline** | BSL 1.1 | Structured Wiki & Knowledge Base | Client-Server API with Caching | Node.js, Postgres, Redis, S3 | Fast-growing teams needing an enterprise Confluence alternative with clean UX |
+| **Trilium Notes** | AGPL-3.0 | Deep Hierarchical Tree & Clones | Local SQLite + Desktop Sync | Node.js + SQLite Docker container | Technical users organizing tens of thousands of deeply nested technical notes |
+| **Docmost** | AGPL-3.0 | Multiplayer Team Docs & Wiki | Real-time WebSockets + Postgres | Docker Compose: Node, Postgres, Redis | Small-to-medium teams looking for a clean, self-hosted Notion/Confluence wiki |
+| **Notesnook** | GPL-3.0 | Encrypted Rich Notebooks | Local Storage + Zero-Knowledge E2EE | Self-hosted Sync Server | Privacy advocates seeking verified zero-knowledge notes with mobile apps |
+| **Standard Notes** | AGPL-3.0 | Minimalist Encrypted Plaintext | Local Cache + E2EE Sync Engine | Docker: Rails, MySQL, Redis | Maximum security minimalists who never want encryption tiered behind paywalls |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions and ecosystem additions are warmly welcomed!
+
+1. **Fork the repository** to your personal GitHub profile.
+2. **Create a descriptive topic branch**:
+   ```bash
+   git checkout -b feat/add-productivity-tool
+   ```
+3. **Commit your additions** ensuring accurate pricing details, free tier boundaries, and verified star badges.
+4. **Push your branch** and **open a Pull Request** with a succinct description of the platform added.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Productivity-Workspace&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Productivity-Workspace&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated ecosystem directory valuable for your personal workflow, team collaboration, or data privacy research, please consider supporting its continuous maintenance:
+
+- ⭐ **Star this repository** on GitHub to amplify its reach!
+- 🍴 **Fork the repo** to keep a personal reference copy.
+- 📢 **Share with fellow developers**, knowledge workers, and privacy advocates.
+- ☕ **Support continuous maintenance & research** by sponsoring via the link below:
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor%20on%20GitHub-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+---
+
+## ⚖️ Disclaimer
+
+- This repository is a **community-curated directory** created for educational, research, and comparative purposes. Mention of specific platforms or commercial products does not constitute an official endorsement.
+- Cloud vendor pricing plans and tier limits fluctuate: always verify pricing on official vendor websites prior to enterprise procurement.
+- When self-hosting open-source solutions, remember that operational responsibility shifts to your infrastructure team—ensure regular database snapshots, TLS certificate renewal, and secure off-site backups.
+
+---
+
+<p align="center">
+  <strong>Crafted with ❤️ for knowledge workers, developers, and teams building workspaces they can truly own.</strong>
+</p>

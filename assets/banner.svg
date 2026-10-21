@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0e7ff" />
+      <stop offset="100%" stop-color="#c7d2fe" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="glow-cyan" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-purple" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filter for soft drop shadow -->
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <!-- Animated grid pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.8" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1.5" fill="#64748b" fill-opacity="0.4" />
+    </pattern>
+
+    <style>
+      .pulse-slow {
+        animation: pulse 6s ease-in-out infinite alternate;
+      }
+      .float-1 {
+        animation: float1 7s ease-in-out infinite alternate;
+      }
+      .float-2 {
+        animation: float2 9s ease-in-out infinite alternate;
+      }
+      .dash-flow {
+        stroke-dasharray: 6 8;
+        animation: dash 20s linear infinite;
+      }
+      .node-pulse {
+        animation: nodePulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes pulse {
+        0% { opacity: 0.3; transform: scale(0.98); }
+        100% { opacity: 0.7; transform: scale(1.02); }
+      }
+      @keyframes float1 {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-12px) rotate(1.5deg); }
+      }
+      @keyframes float2 {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(12px) rotate(-1.5deg); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -200; }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 5; opacity: 0.8; }
+        50% { r: 8; opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="380" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Ambient Glows -->
+  <rect width="1200" height="380" rx="16" fill="url(#glow-cyan)" />
+  <rect width="1200" height="380" rx="16" fill="url(#glow-purple)" />
+
+  <!-- Grid Overlay -->
+  <rect width="1200" height="380" rx="16" fill="url(#grid-pattern)" />
+
+  <!-- Dynamic Network Connection Paths (Background/Midground) -->
+  <g opacity="0.45" class="dash-flow">
+    <path d="M 80,60 Q 240,120 400,70 T 750,110 T 1120,60" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <path d="M 60,320 Q 300,240 550,290 T 920,260 T 1140,320" fill="none" stroke="#a855f7" stroke-width="1.8" />
+    <path d="M 120,200 C 280,310 400,90 600,190 C 800,290 980,100 1080,220" fill="none" stroke="#6366f1" stroke-width="1.2" stroke-dasharray="4 6" />
+  </g>
+
+  <!-- Dynamic Floating Decorative Tags/Nodes -->
+  <g class="float-1">
+    <!-- Left Pill: Local-First -->
+    <g transform="translate(60, 95)" filter="url(#card-shadow)">
+      <rect width="135" height="34" rx="17" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.2" />
+      <circle cx="18" cy="17" r="4.5" fill="#38bdf8" />
+      <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">Local-First</text>
+    </g>
+
+    <!-- Right Pill: End-to-End Encrypted -->
+    <g transform="translate(980, 85)" filter="url(#card-shadow)">
+      <rect width="165" height="34" rx="17" fill="url(#card-grad)" stroke="#a855f7" stroke-width="1.2" />
+      <circle cx="18" cy="17" r="4.5" fill="#c084fc" />
+      <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">E2E Encrypted</text>
+    </g>
+  </g>
+
+  <g class="float-2">
+    <!-- Left Bottom Pill: Self-Hosted -->
+    <g transform="translate(85, 260)" filter="url(#card-shadow)">
+      <rect width="130" height="34" rx="17" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.2" />
+      <circle cx="18" cy="17" r="4.5" fill="#34d399" />
+      <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">Self-Hosted</text>
+    </g>
+
+    <!-- Right Bottom Pill: Block &amp; Canvas -->
+    <g transform="translate(990, 265)" filter="url(#card-shadow)">
+      <rect width="145" height="34" rx="17" fill="url(#card-grad)" stroke="#f59e0b" stroke-width="1.2" />
+      <circle cx="18" cy="17" r="4.5" fill="#fbbf24" />
+      <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">Block Editor</text>
+    </g>
+  </g>
+
+  <!-- Animated Glowing Network Nodes -->
+  <circle cx="400" cy="70" r="5" fill="#38bdf8" class="node-pulse" />
+  <circle cx="750" cy="110" r="5" fill="#818cf8" class="node-pulse" />
+  <circle cx="550" cy="290" r="5" fill="#c084fc" class="node-pulse" />
+  <circle cx="920" cy="260" r="5" fill="#f472b6" class="node-pulse" />
+
+  <!-- Center Card / Foreground Container -->
+  <g transform="translate(200, 75)">
+    <!-- Backing plate for high contrast readability -->
+    <rect width="800" height="230" rx="20" fill="#0b1120" fill-opacity="0.82" stroke="url(#accent-grad)" stroke-width="1.5" filter="url(#card-shadow)" />
+
+    <!-- Category Pill -->
+    <g transform="translate(290, 25)">
+      <rect width="220" height="26" rx="13" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="110" y="17" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" text-anchor="middle">CURATED AWESOME LIST</text>
+    </g>
+
+    <!-- Title -->
+    <text x="400" y="98" fill="url(#text-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5" text-anchor="middle">
+      Awesome Productivity &amp; Workspace
+    </text>
+
+    <!-- Accent rule -->
+    <rect x="330" y="118" width="140" height="3" rx="1.5" fill="url(#accent-grad)" />
+
+    <!-- Subtitle -->
+    <text x="400" y="148" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" text-anchor="middle">
+      Curated Directory of Local-First, Block-Based &amp; Open-Source Workspaces
+    </text>
+
+    <!-- Mini Feature Badges Row -->
+    <g transform="translate(130, 175)">
+      <g transform="translate(0, 0)">
+        <rect width="115" height="24" rx="6" fill="#1e293b" />
+        <text x="57" y="16" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="middle">📝 Notes &amp; Docs</text>
+      </g>
+      <g transform="translate(130, 0)">
+        <rect width="125" height="24" rx="6" fill="#1e293b" />
+        <text x="62" y="16" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="middle">📊 Data Ownership</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="130" height="24" rx="6" fill="#1e293b" />
+        <text x="65" y="16" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="middle">🔒 Privacy-First</text>
+      </g>
+      <g transform="translate(415, 0)">
+        <rect width="125" height="24" rx="6" fill="#1e293b" />
+        <text x="62" y="16" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="middle">⚡ Knowledge Base</text>
+      </g>
+    </g>
+  </g>
+</svg>
