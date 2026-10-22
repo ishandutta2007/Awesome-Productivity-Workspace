@@ -76,87 +76,87 @@ The table below catalogs premier commercial SaaS productivity workspaces, sorted
 
 A curated compilation of top self-hostable, local-first, and open-source productivity workspaces, **sorted in descending order by GitHub stargazers**:
 
-### 1. [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) [![GitHub stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers)
+### 1. [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) [![GitHub_Stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: Rust, Flutter, Go, PostgreSQL, Redis, MinIO
 - **Key Capabilities**: The leading open-source Notion alternative. Features complete offline capability by default, grid, board, calendar, and document views, customizable filters, and self-hosted AppFlowy Cloud via Docker Compose. Ensures instant page loads because data resides on your local hardware.
 
-### 2. [AFFiNE](https://github.com/toeverything/AFFiNE) [![GitHub stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers)
+### 2. [AFFiNE](https://github.com/toeverything/AFFiNE) [![GitHub_Stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers)
 - **License**: Community Edition (Source Available / Open Core)
 - **Technology Stack**: TypeScript, Rust (OctoBase), WebAssembly, React
 - **Key Capabilities**: The next-generation docs-plus-whiteboard hybrid. Unifies structured block document editing with an edgeless whiteboard canvas for mind maps, sticky notes, and sketches. Local-first CRDT synchronization across desktop and web with self-hostable Docker deployment.
 
-### 3. [Memos](https://github.com/usememos/memos) [![GitHub stars](https://img.shields.io/github/stars/usememos/memos?style=social&color=white)](https://github.com/usememos/memos/stargazers)
+### 3. [Memos](https://github.com/usememos/memos) [![GitHub_Stars](https://img.shields.io/github/stars/usememos/memos?style=social&color=white)](https://github.com/usememos/memos/stargazers)
 - **License**: MIT
 - **Technology Stack**: Go, TypeScript, React, SQLite / PostgreSQL
 - **Key Capabilities**: Ultra-lightweight, privacy-first, self-hosted note-taking service and micro-journal. Features a personal timeline, rich Markdown formatting, tag-based categorization, REST APIs, and instant single-binary or single-container Docker deployment.
 
-### 4. [Joplin](https://github.com/laurent22/joplin) [![GitHub stars](https://img.shields.io/github/stars/laurent22/joplin?style=social&color=white)](https://github.com/laurent22/joplin/stargazers)
+### 4. [Joplin](https://github.com/laurent22/joplin) [![GitHub_Stars](https://img.shields.io/github/stars/laurent22/joplin?style=social&color=white)](https://github.com/laurent22/joplin/stargazers)
 - **License**: MIT
 - **Technology Stack**: TypeScript, Electron, React Native, SQLite
 - **Key Capabilities**: The definitive open-source Evernote replacement. Supports end-to-end encrypted (E2EE) synchronization via Nextcloud, Dropbox, WebDAV, OneDrive, or self-hosted Joplin Server. Offers native desktop and mobile apps, full-text search, plugins, and web clipper.
 
-### 5. [SiYuan](https://github.com/siyuan-note/siyuan) [![GitHub stars](https://img.shields.io/github/stars/siyuan-note/siyuan?style=social&color=white)](https://github.com/siyuan-note/siyuan/stargazers)
+### 5. [SiYuan](https://github.com/siyuan-note/siyuan) [![GitHub_Stars](https://img.shields.io/github/stars/siyuan-note/siyuan?style=social&color=white)](https://github.com/siyuan-note/siyuan/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: Go, TypeScript, Electron, SQLite
 - **Key Capabilities**: Privacy-first, local-first personal knowledge workspace built on a granular block-level reference architecture. Includes bidirectional linking, SQL-based database queries, graph visualization, PDF annotation, and built-in end-to-end cloud sync with self-hosting support.
 
-### 6. [Logseq](https://github.com/logseq/logseq) [![GitHub stars](https://img.shields.io/github/stars/logseq/logseq?style=social&color=white)](https://github.com/logseq/logseq/stargazers)
+### 6. [Logseq](https://github.com/logseq/logseq) [![GitHub_Stars](https://img.shields.io/github/stars/logseq/logseq?style=social&color=white)](https://github.com/logseq/logseq/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: Clojure, ClojureScript, Electron, Datascript
 - **Key Capabilities**: Outliner-first knowledge management system built on local plain-text Markdown and Org-mode files. Emphasizes daily journals, bi-directional backlinks, flashcards (spaced repetition), and queries without vendor lock-in.
 
-### 7. [Outline](https://github.com/outline/outline) [![GitHub stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers)
+### 7. [Outline](https://github.com/outline/outline) [![GitHub_Stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers)
 - **License**: BSL 1.1 / Open Core
 - **Technology Stack**: Node.js, TypeScript, React, PostgreSQL, Redis, S3
 - **Key Capabilities**: Fast, modern, and beautiful collaborative knowledge base and wiki for growing teams. Features a clean markdown-compatible editor, enterprise SSO (Google, Okta, OIDC, Slack), granular permission hierarchies, and complete audit logging.
 
-### 8. [Trilium Notes](https://github.com/TriliumNext/Trilium) [![GitHub stars](https://img.shields.io/github/stars/TriliumNext/Trilium?style=social&color=white)](https://github.com/TriliumNext/Trilium/stargazers)
+### 8. [Trilium Notes](https://github.com/TriliumNext/Trilium) [![GitHub_Stars](https://img.shields.io/github/stars/TriliumNext/Trilium?style=social&color=white)](https://github.com/TriliumNext/Trilium/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: JavaScript, Node.js, SQLite, Electron
 - **Key Capabilities**: Hierarchical note-taking application designed for building large-scale personal knowledge bases. Features deep note trees, note cloning, scripting via JavaScript APIs, mind maps, relationship diagrams, and automated desktop-to-server sync.
 
-### 9. [Docmost](https://github.com/docmost/docmost) [![GitHub stars](https://img.shields.io/github/stars/docmost/docmost?style=social&color=white)](https://github.com/docmost/docmost/stargazers)
+### 9. [Docmost](https://github.com/docmost/docmost) [![GitHub_Stars](https://img.shields.io/github/stars/docmost/docmost?style=social&color=white)](https://github.com/docmost/docmost/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: NestJS, TypeScript, React, PostgreSQL, Redis
 - **Key Capabilities**: Open-source collaborative wiki and documentation software engineered as a modern alternative to Confluence and Notion. Provides real-time multiplayer editing, nested page trees, markdown shortcuts, file attachments, and lightweight Docker hosting.
 
-### 10. [Foam](https://github.com/foambubble/foam) [![GitHub stars](https://img.shields.io/github/stars/foambubble/foam?style=social&color=white)](https://github.com/foambubble/foam/stargazers)
+### 10. [Foam](https://github.com/foambubble/foam) [![GitHub_Stars](https://img.shields.io/github/stars/foambubble/foam?style=social&color=white)](https://github.com/foambubble/foam/stargazers)
 - **License**: MIT
 - **Technology Stack**: TypeScript, VS Code Extension ecosystem, Markdown
 - **Key Capabilities**: A personal knowledge management and sharing system inspired by Roam Research, built directly into Visual Studio Code. Uses raw Markdown files on disk, Git for version control and backup, and graph visualization for interconnected thoughts.
 
-### 11. [Notesnook](https://github.com/streetwriters/notesnook) [![GitHub stars](https://img.shields.io/github/stars/streetwriters/notesnook?style=social&color=white)](https://github.com/streetwriters/notesnook/stargazers)
+### 11. [Notesnook](https://github.com/streetwriters/notesnook) [![GitHub_Stars](https://img.shields.io/github/stars/streetwriters/notesnook?style=social&color=white)](https://github.com/streetwriters/notesnook/stargazers)
 - **License**: GPL-3.0
 - **Technology Stack**: TypeScript, React, React Native, SQLite
 - **Key Capabilities**: Fully open-source and zero-knowledge end-to-end encrypted note-taking application. Protects notes with client-side encryption, biometric locks, export to PDF/Markdown, and full multi-device synchronization without tracking or telemetry.
 
-### 12. [Anytype](https://github.com/anyproto/anytype-ts) [![GitHub stars](https://img.shields.io/github/stars/anyproto/anytype-ts?style=social&color=white)](https://github.com/anyproto/anytype-ts/stargazers)
+### 12. [Anytype](https://github.com/anyproto/anytype-ts) [![GitHub_Stars](https://img.shields.io/github/stars/anyproto/anytype-ts?style=social&color=white)](https://github.com/anyproto/anytype-ts/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: Go (anytype-heart), TypeScript, Electron
 - **Key Capabilities**: Local-first, peer-to-peer encrypted operating environment for thoughts and docs. Uses an object-oriented graph data model (pages, tasks, sets, relations) operating seamlessly offline and syncing via local network or encrypted backup nodes.
 
-### 13. [HedgeDoc](https://github.com/hedgedoc/hedgedoc) [![GitHub stars](https://img.shields.io/github/stars/hedgedoc/hedgedoc?style=social&color=white)](https://github.com/hedgedoc/hedgedoc/stargazers)
+### 13. [HedgeDoc](https://github.com/hedgedoc/hedgedoc) [![GitHub_Stars](https://img.shields.io/github/stars/hedgedoc/hedgedoc?style=social&color=white)](https://github.com/hedgedoc/hedgedoc/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: Node.js, TypeScript, React, PostgreSQL / MariaDB
 - **Key Capabilities**: Self-hosted, real-time collaborative Markdown editor (formerly CodiMD). Enables concurrent team editing of technical specifications, meeting minutes, and presentations with slide mode, MathJax/LaTeX, and diagram support.
 
-### 14. [Dendron](https://github.com/dendronhq/dendron) [![GitHub stars](https://img.shields.io/github/stars/dendronhq/dendron?style=social&color=white)](https://github.com/dendronhq/dendron/stargazers)
+### 14. [Dendron](https://github.com/dendronhq/dendron) [![GitHub_Stars](https://img.shields.io/github/stars/dendronhq/dendron?style=social&color=white)](https://github.com/dendronhq/dendron/stargazers)
 - **License**: Apache-2.0
 - **Technology Stack**: TypeScript, VS Code Extension
 - **Key Capabilities**: Hierarchical note-taking tool that grows alongside your knowledge base. Combines the freedom of linking with the structure of schemas, enabling fast refactoring, flexible publishing, and full Git synchronization.
 
-### 15. [Standard Notes](https://github.com/standardnotes/app) [![GitHub stars](https://img.shields.io/github/stars/standardnotes/app?style=social&color=white)](https://github.com/standardnotes/app/stargazers)
+### 15. [Standard Notes](https://github.com/standardnotes/app) [![GitHub_Stars](https://img.shields.io/github/stars/standardnotes/app?style=social&color=white)](https://github.com/standardnotes/app/stargazers)
 - **License**: AGPL-3.0
 - **Technology Stack**: TypeScript, React, Ruby on Rails (Sync Server), SQLite
 - **Key Capabilities**: Ultra-secure, privacy-focused note-taking application. Free tier offers lifetime end-to-end encryption with unlimited cross-device sync, offline access, and PIN protection, while paid tiers add rich text, code editors, and spreadsheets.
 
-### 16. [SilverBullet](https://github.com/silverbulletmd/silverbullet) [![GitHub stars](https://img.shields.io/github/stars/silverbulletmd/silverbullet?style=social&color=white)](https://github.com/silverbulletmd/silverbullet/stargazers)
+### 16. [SilverBullet](https://github.com/silverbulletmd/silverbullet) [![GitHub_Stars](https://img.shields.io/github/stars/silverbulletmd/silverbullet?style=social&color=white)](https://github.com/silverbulletmd/silverbullet/stargazers)
 - **License**: MIT
 - **Technology Stack**: TypeScript, Deno, WebAssembly, Lua
 - **Key Capabilities**: An extensible, open-source personal knowledge base powered by plain Markdown files. Features an in-browser editor with live queries, embedded templates, client-side offline execution, and scripting via Lua.
 
-### 17. [Alexandrie](https://github.com/Smaug6739/Alexandrie) [![GitHub stars](https://img.shields.io/github/stars/Smaug6739/Alexandrie?style=social&color=white)](https://github.com/Smaug6739/Alexandrie/stargazers)
+### 17. [Alexandrie](https://github.com/Smaug6739/Alexandrie) [![GitHub_Stars](https://img.shields.io/github/stars/Smaug6739/Alexandrie?style=social&color=white)](https://github.com/Smaug6739/Alexandrie/stargazers)
 - **License**: MIT
 - **Technology Stack**: TypeScript, Next.js, CodeMirror 6, Docker, MinIO / S3
 - **Key Capabilities**: Lightweight, offline-first Markdown knowledge base with deep technical writing capabilities. Supports interactive LaTeX, diagrams, multi-tenant teams, OIDC single sign-on, full-text indexing, and automated S3 backups.
@@ -199,7 +199,7 @@ Contributions and ecosystem additions are warmly welcomed!
    ```bash
    git checkout -b feat/add-productivity-tool
    ```
-3. **Commit your additions** ensuring accurate pricing details, free tier boundaries, and verified star badges.
+3. **Commit your additions** ensuring accurate pricing details, free tier boundaries, and verified Stars_Badges.
 4. **Push your branch** and **open a Pull Request** with a succinct description of the platform added.
 
 ---
